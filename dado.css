@@ -1,0 +1,76 @@
+.dado {
+	width: 120px;
+	height: 120px;
+	border: 1px solid #333;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+
+}
+.punto {
+	width: 20px;
+	height: 20px;
+	background: #333;
+	border-radius: 50%;
+	align-self: center;
+	justify-self: center;
+}
+
+.p1 {
+	/* aqui no va nada porque se toman los valores por defecto row:1 col: 1*/
+
+}
+
+.p2 {
+	grid-area: 1 / 3 /* Omito los valores de row-end y column-end para que tome una celda */
+
+}
+
+.p3 {
+	grid-area: 1/3;
+
+}
+
+.p4 {
+    grid-area: 2 / 1;
+}
+
+.p5 {
+    grid-area: 2 / 2;
+}
+
+.p6 {
+    grid-area: 2 / 3;
+}
+
+.p7 {
+   grid-area: 3 / 1;
+}
+
+.p8 {
+
+}
+
+.p9 {
+   grid-area: 3 / 3;
+}
+
+.dice-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/*.uno .punto {
+	align-self: center;
+	justify-self: center;
+}
+
+.dos .punto:first-child {
+	align-self: start;
+	justify-self: start;
+}
+
+.dos .punto:last-child {
+	align-self: end;
+	justify-self: end;
+}*/
